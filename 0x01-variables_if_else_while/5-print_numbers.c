@@ -5,7 +5,8 @@
 */
 int main(void)
 {
-	for (char n = 0; n<10; n++)
+	char n = 0;
+	for (n; n<10; n++)
 	{
 		printf("%d", n);
 	}
