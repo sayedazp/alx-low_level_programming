@@ -6,7 +6,7 @@
 int main(void)
 {
 	char n = 0;
-	for (n; n<10; n++)
+	for (; n<10; n++)
 	{
 		printf("%d", n);
 	}
