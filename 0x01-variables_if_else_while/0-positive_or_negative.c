@@ -16,7 +16,7 @@ int main(void)
 	/* your code goes there */
 	if(n > 0)
 		printf("%u is positive", (unsigned int)n);
-	else if(u == 0)
+	else if(n == 0)
 		printf("%u is zero", (unsigned int)n);
 	else
 		printf("%u is negative", (unsigned int)n);
