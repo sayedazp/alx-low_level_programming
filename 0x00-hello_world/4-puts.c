@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
   * main - a function which executes a printing using puts function
-  * Reuturn: return 0 after execution
+  * Return: return 0 after execution
 */
 int main(void)
 
