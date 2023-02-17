@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/*
+ *the main function which executes a printing using puts function
+*/
 int main(void)
 
 {
