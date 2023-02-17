@@ -8,7 +8,7 @@ int main(void)
 	int n = 48;
 	int i = n + 1;
 	int z = i + 1;
-	
+
 	for (; n < 58; n++)
 	{
 		for (i = n + 1; i < 58; i++)
