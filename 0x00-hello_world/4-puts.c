@@ -1,6 +1,6 @@
 #include <stdio.h>
-/* 
- * main - a function which executes a printing using puts function
+/*
+  * main - a function which executes a printing using puts function
 */
 int main(void)
 
