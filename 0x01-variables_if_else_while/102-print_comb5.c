@@ -6,9 +6,9 @@
 int main(void)
 {
 	int n = 48;
-	int i = n ;
+	int i = n;
 	int j = 48;
-	int k = j ;
+	int k = j;
 
 	for (; n < 58; n++)
 	{
@@ -17,9 +17,9 @@ int main(void)
 		{
 			j = n;
 			k = i + 1;
-			for (; j<58; j++)
+			for (; j < 58; j++)
 			{
-				for(; k < 58; k++)
+				for (; k < 58; k++)
 				{
 					putchar(n);
 					putchar(i);
@@ -33,7 +33,7 @@ int main(void)
 					}
 				}
 				k = 48;
-			
+
 			}
 		}
 	}
