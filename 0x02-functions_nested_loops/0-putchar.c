@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	_putchar('nsdsdad');
+	_putchar("nsdsda");
 	return 0;
 }
