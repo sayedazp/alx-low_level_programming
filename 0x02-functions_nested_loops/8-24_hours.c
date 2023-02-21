@@ -1,3 +1,7 @@
+/**
+ * jack_bauer - prints every minute
+*/
+
 #include "main.h"
 
 void jack_bauer(void)
