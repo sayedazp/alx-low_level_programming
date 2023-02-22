@@ -10,7 +10,7 @@ void times_table(void)
 		while (b <= 9)
 		{
 			prod = a * b;
-			if (a != 0)
+			if (b != 0)
 			{
 				_putchar(prod >= 10 ? (prod/10)%10 + '0' : ' ');
 			}	
