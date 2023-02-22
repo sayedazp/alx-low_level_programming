@@ -16,6 +16,6 @@ int main(void)
 		if (current % 2 == 0)
 			sum += current;
 	}
-	printf("\n");
+	printf("%l\n", sum);
 	return (0);
 }
