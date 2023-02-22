@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long long prev = 1, prevv = 0 , c = 0 , current;
+	long prev = 1, prevv = 0 , c = 0 , current;
 
 	while (c  < 50)
 	{
@@ -15,7 +15,7 @@ int main(void)
 		prev = current;
 		c++;
 
-		printf("%lld, ", current);
+		printf("%ld, ", current);
 	}
 	printf("\n");
 	return (0);
