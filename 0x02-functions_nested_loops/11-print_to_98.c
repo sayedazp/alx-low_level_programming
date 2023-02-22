@@ -7,11 +7,11 @@ void print_to_98(int n)
 {
 	int a, b, c;
 
-	while(n != 98)
+	while (n != 98)
 	{
-		a = n < 0 ? (n / 10) % 10 * -1 : (n / 10) % 10 ;
-		b = n <  0 ? (n % 10) * -1 : n % 10 ;
-		c = n < 0 ? (n / 100) * -1: n / 100 ;
+		a = n < 0 ? (n / 10) % 10 * -1 : (n / 10) % 10;
+		b = n <  0 ? (n % 10) * -1 : n % 10;
+		c = n < 0 ? (n / 100) * -1 : n / 100;
 
 		if (n < 0)
 			_putchar('-');
@@ -26,7 +26,7 @@ void print_to_98(int n)
 			_putchar(' ');
 
 		}
-		n = n > 98 ? n - 1 : n + 1 ;
+		n = n > 98 ? n - 1 : n + 1;
 	}
 	_putchar(9 + '0');
 	_putchar(8 + '0');
