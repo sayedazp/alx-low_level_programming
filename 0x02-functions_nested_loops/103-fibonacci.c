@@ -8,7 +8,7 @@ int main(void)
 {
 	long prev = 1, prevv = 0, current, sum;
 
-	while (currentt <= 4000000)
+	while (current <= 4000000)
 	{
 		current = prev + prevv;
 		prevv = prev;
