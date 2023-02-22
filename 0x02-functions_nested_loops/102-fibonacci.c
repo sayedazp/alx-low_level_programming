@@ -14,8 +14,11 @@ int main(void)
 		prevv = prev;
 		prev = current;
 		c++;
-
-		printf("%ld, ", current);
+		
+		if (c != 49 )
+			printf("%ld, ", current);
+		else
+			printf("%ld", current)
 	}
 	printf("\n");
 	return (0);
