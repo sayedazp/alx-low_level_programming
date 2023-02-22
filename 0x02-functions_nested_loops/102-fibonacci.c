@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * mian - entry point func
+ * main - entry point func
  * Return: always 0
 */
 
