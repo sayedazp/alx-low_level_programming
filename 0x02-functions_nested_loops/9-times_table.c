@@ -1,5 +1,5 @@
 #include "main.h"
-void main(void)
+void times_table(void)
 {
 	int a = 0, b = 0, prod;
 	
