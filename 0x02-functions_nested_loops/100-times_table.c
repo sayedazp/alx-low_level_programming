@@ -4,7 +4,7 @@
 */
 void print_times_table(int n)
 {
-	int c = 0, a = 0, b = 0, prod;
+	int a = 0, b = 0, prod;
 
 	while (a <= n)
 	{
