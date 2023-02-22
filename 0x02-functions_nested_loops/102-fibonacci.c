@@ -15,7 +15,7 @@ int main(void)
 		prev = current;
 		c++;
 
-		printf("%d, ", current);
+		printf("%lld, ", current);
 	}
 	printf("\n");
 	return (0);
