@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long prev = 1, prevv = 0, c = 0, current, sum;
+	long prev = 1, prevv = 0, current, sum;
 
 	while (currentt <= 4000000)
 	{
