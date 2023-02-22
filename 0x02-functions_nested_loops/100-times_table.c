@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * times_table - crazy func
+ * @n: desired multiples
 */
 void print_times_table(int n)
 {
