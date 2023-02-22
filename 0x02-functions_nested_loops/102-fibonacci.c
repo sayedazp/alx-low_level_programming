@@ -15,7 +15,7 @@ int main(void)
 		prev = current;
 		c++;
 		
-		if (c != 49 )
+		if (c < 49 )
 			printf("%ld, ", current);
 		else
 			printf("%ld", current);
