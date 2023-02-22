@@ -5,7 +5,7 @@
 */
 void print_to_98(int n)
 {
-	int a,b,c;
+	int a,b;
 
 	while(n <= 98)
 	{
