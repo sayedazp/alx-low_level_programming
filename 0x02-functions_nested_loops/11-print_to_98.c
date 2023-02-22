@@ -16,10 +16,7 @@ void print_to_98(int n)
 		if (n < 0)
 			_putchar('-');
 		if (c != 0)
-		{
 			_putchar(c + '0');
-			_putchar(a + '0');
-		}
 		if (a != 0 || c != 0)
 			_putchar(a + '0');
 		_putchar(b + '0');
