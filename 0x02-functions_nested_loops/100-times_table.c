@@ -6,7 +6,7 @@ void print_times_table(int n)
 {
 	int a = 0, b = 0, prod;
 
-	while (a <= n)
+	while (a <= n && n <= 15)
 	{
 		b = 0;
 
