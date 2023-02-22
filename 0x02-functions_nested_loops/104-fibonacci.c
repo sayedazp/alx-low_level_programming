@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long prev = 1, prevv = 0, c = 0, current;
+	long unsigned prev = 1, prevv = 0, c = 0, current;
 
 	while (c  < 97)
 	{
@@ -15,9 +15,9 @@ int main(void)
 		prev = current;
 
 		if (c < 95)
-			printf("%ld, ", current);
+			printf("%lu, ", current);
 		else
-			printf("%ld", current);
+			printf("%lu", current);
 		c++;
 	}
 	printf("\n");
