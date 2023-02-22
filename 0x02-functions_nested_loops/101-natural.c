@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry point func
+ * Return: always retun 0 after execution
 */
 int main(void)
 {
