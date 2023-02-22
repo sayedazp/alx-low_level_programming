@@ -1,8 +1,11 @@
 #include "main.h"
+/**
+ * times_table - crazy func
+*/
 void times_table(void)
 {
 	int a = 0, b = 0, prod;
-	
+
 	while (a <= 9)
 	{
 		b = 0;
@@ -12,15 +15,15 @@ void times_table(void)
 			prod = a * b;
 			if (b != 0)
 			{
-				_putchar(prod >= 10 ? (prod/10)%10 + '0' : ' ');
-			}	
-			_putchar(prod%10 + '0');
+				_putchar(prod >= 10 ? (prod / 10) % 10 + '0' : ' ');
+			}
+			_putchar(prod % 10 + '0');
 			if (b != 9)
 				_putchar(',');
 			if (b != 9)
 				_putchar(' ');
 			b++;
-			
+
 		}
 		_putchar('\n');
 		a++;
