@@ -15,7 +15,7 @@ void print_times_table(int n)
 			prod = a * b;
 			if (b != 0)
 			{
-				_putchar(prod >= 100 ? (prod/100) % 10 + '0' : ' ');
+				_putchar(prod >= 100 ? (prod / 100) % 10 + '0' : ' ');
 				_putchar(prod >= 10 ? (prod / 10) % 10 + '0' : ' ');
 			}
 			_putchar(prod % 10 + '0');
