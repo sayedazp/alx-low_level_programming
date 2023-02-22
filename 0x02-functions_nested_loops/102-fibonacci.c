@@ -18,7 +18,7 @@ int main(void)
 		if (c != 49 )
 			printf("%ld, ", current);
 		else
-			printf("%ld", current)
+			printf("%ld", current);
 	}
 	printf("\n");
 	return (0);
