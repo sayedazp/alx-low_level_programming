@@ -12,6 +12,8 @@ int main(void)
 		prev = current;
 		c++;
 
+		printf("%d, ", current);
 	}
+	printf("\n");
 	return (0);
 }
