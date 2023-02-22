@@ -9,9 +9,9 @@ void print_to_98(int n)
 
 	while(n != 98)
 	{
-		a = (n / 10);
-		b = n % 10;
-		c = n / 100;
+		a = n < 0 ? (n / 10) * -1 : n / 10 ;
+		b = n <  0 ? (n % 10) * -1 : n % 10 ;
+		c = n < 0 ? (n / 100) * -1: n / 100 ;
 
 		if (n < 0)
 			_putchar('-');
