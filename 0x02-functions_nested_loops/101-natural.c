@@ -1,5 +1,7 @@
 #include <stdio.h>
-/***/
+/**
+ * main - entry point func
+*/
 int main(void)
 {
 	int c = 0;
@@ -14,6 +16,6 @@ int main(void)
 		c++;
 
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
