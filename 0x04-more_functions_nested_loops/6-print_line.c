@@ -4,7 +4,7 @@
  * @n: the length
 */
 
-void print_numbers(int n)
+void print_line(int n)
 {
 	while (n--)
 	{
