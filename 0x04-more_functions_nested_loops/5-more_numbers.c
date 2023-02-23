@@ -5,23 +5,23 @@
 
 void more_numbers(void)
 {
-	int a = 0, b = 0, c = 0;
+	int a = 48, b = 48, c = 0;
 
 	while (c <= 9)
 	{
-		c = 0;
-		while (a < 2)
+		a = 48;
+		while (a < 50)
 		{
-			b = 0;
-			while (b < 10)
+			b = 48;
+			while (b < 58)
 			{
-				if (a != 0)
+				if (a != 48)
 				{
-					if (b == 5)
+					if (b == 53)
 						break;
-					_putchar(a + '0');
+					_putchar(a);
 				}
-				_putchar(b + '0');
+				_putchar(b);
 				b++;
 			}
 			a++;
