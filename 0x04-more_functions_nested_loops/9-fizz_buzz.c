@@ -9,14 +9,25 @@ int main(void)
 
 	while (x <= 100)
 	{
-		if (x % 3 == 0 && x % 5 == 0)
-			printf("FizzBuzz ");
-		else if (x % 3 == 0)
-			printf("Fizz ");
+		if (x % 3 == 0)
+		{
+			if (x % 5 == 0)
+				printf("FizzBuzz");
+			else
+				printf("Fizz");
+		}
 		else if (x % 5 == 0)
-			printf("Buzz ");
+		{
+			printf("Buzz");
+		}
 		else
-			printf("%d ", x);
+		{
+			printf("%d", x);
+		}
+
+		if (x == 100)
+			break;
+		printf(" ");
 		x++;
 	}
 	printf("\n");
