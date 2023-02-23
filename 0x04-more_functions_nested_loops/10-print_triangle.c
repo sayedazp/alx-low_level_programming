@@ -26,5 +26,5 @@ void print_triangle(int size)
 		c++;
 	}
 	if (c <= 0)
-		_putchar("\n");
+		_putchar('\n');
 }
