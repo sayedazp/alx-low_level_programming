@@ -5,9 +5,6 @@
 */
 void print_number(int n)
 {
-	int o = 10;
-	int v = 0;
-
 	if (n < 0)
 	{
 		_putchar('-');
