@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry point func
+ * Return: always 0
 */
 int main(void)
 {
@@ -13,6 +14,6 @@ int main(void)
 		if (n % c == 0)
 			n /= c;
 	}
-	printf("%d", c);
+	printf("%d\n", c);
 	return (0);
 }
