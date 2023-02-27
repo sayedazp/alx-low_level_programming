@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * puts_half - reverse a string
  * @s: char pointer as input
