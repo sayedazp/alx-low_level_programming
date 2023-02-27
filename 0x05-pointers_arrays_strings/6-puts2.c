@@ -1,16 +1,16 @@
 #include "main.h"
 /**
  * _puts2 - prints a string to output a variation
- * @s: integer pointer as input
+ * @string: integner pointer as input
 */
-void _puts2(char *s)
+void _puts2(char *string)
 {
 	int i = 0;
 
-	while (*(s + i) != '\0')
+	while (*(string + i) != '\0')
 	{
 		if (i % 2 == 0)
-			_putchar(*(s + i));
+			_putchar(*(string + i));
 		i++;
 	}
 	_putchar('\n');
