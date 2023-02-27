@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts2 - prints a string to output a variation
+ * puts2 - prints a string to output a variation
  * @string: integner pointer as input
 */
 void puts2(char *string)
