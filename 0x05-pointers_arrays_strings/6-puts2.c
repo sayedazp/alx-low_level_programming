@@ -3,7 +3,7 @@
  * _puts2 - prints a string to output a variation
  * @string: integner pointer as input
 */
-void _puts2(char *string)
+void puts2(char *string)
 {
 	int i = 0;
 
