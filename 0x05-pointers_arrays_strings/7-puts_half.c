@@ -3,11 +3,11 @@
  * puts_half - reverse a string
  * @s: char pointer as input
 */
-void puts_half(char *s)
+void puts_half(char *string)
 {
 	int i = 0, c = 0;
 
-	while (*(s + i) != '\0')
+	while (*(string + i) != '\0')
 	{
 		c++;
 		i++;
@@ -18,7 +18,7 @@ void puts_half(char *s)
 		i = ((c - 1) / 2) + 1;
 	while (i <= c)
 	{
-		_putchar(*(s + i));
+		_putchar(*(string + i));
 		i++;
 	}
 }
