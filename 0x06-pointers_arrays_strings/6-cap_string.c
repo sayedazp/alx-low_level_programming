@@ -13,7 +13,7 @@ char *cap_string(char *a)
 
 	while (a[i] != '\0')
 	{
-		while (l < sizeof(lis) / sizeof(int) && (a[i] >= 'a' && a[i] <= 'z'))
+		while ((l < 13)  && (a[i] >= 'a' && a[i] <= 'z'))
 		{
 			if (a[i - 1] == lis[l])
 			{
