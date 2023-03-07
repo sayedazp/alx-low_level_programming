@@ -1,9 +1,3 @@
-/**
- * _strstr - fancy string finder
- * @haystack: searched str
- * @needle: searchfor string
- * Retuen: returns a char pointer
-*/
 #include "main.h"
 /**
  * _strstr - Entry point
