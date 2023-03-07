@@ -4,23 +4,29 @@
  * @needle: searchfor string
  * Retuen: returns a char pointer
 */
+#include "main.h"
+/**
+ * _strstr - Entry point
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
+ */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, n = 0;
-
-	while (haystack[i] != '\0')
+	for (; *haystack != '\0'; haystack++)
 	{
-		if (haystack[i] == needle[0])
+		char *l = haystack;
+		char *p = needle;
+
+		while (*l == *p && *p != '\0')
 		{
-			n = 0;
-			while (haystack[i + n] == needle[n] && haystack[i + n] != '\0')
-			{
-				if (needle[n + 1] == '\0')
-					return (&haystack[i]);
-				n++;
-			}
+			l++;
+			p++;
 		}
-		i++;
+
+		if (*p == '\0')
+			return (haystack);
 	}
-	return (NULL);
+
+	return (0);
 }
