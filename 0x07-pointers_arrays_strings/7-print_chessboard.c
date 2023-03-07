@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_chessboard - prints a chess board
  * @a: pointer of pointers
@@ -15,7 +16,7 @@ void print_chessboard(char (*a)[8])
 			_putchar(a[i][n]);
 			n++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 }
