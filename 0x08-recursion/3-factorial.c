@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * factorial - computes factorial
  * @n: the target num
