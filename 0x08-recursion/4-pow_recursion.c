@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * _pow_recursion - a function to compute numbers raised to power
  * @x: first inp
