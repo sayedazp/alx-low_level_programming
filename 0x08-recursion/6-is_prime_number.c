@@ -14,7 +14,7 @@ int check_prev(int base, int x, int y)
 		return (1);
 	if (base % y == 0)
 		return (0);
-	return(check_prev(base, x, y + 1));
+	return (check_prev(base, x, y + 1));
 }
 /**
  * is_prime_number - a function that checks if certain num is prime
