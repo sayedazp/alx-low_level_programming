@@ -9,9 +9,9 @@ int rec_step(char *s, char *o)
 {
 	if (s <= o)
 		return (1);
-	if (*s == *o)
-		rec_step(s - 1, o + 1);
-	return (0);
+	if (*s != *o)
+		return (0);
+	return (rec_step(s - 1, o + 1));
 }
 /**
  * rec_check - helper func
