@@ -11,8 +11,7 @@ int rec_step(char *s, char *o)
 		return (1);
 	if (*s == *o)
 		rec_step(s - 1, o + 1);
-	else if (*s != *o)
-		return (0);
+	return (0);
 }
 /**
  * rec_check - helper func
@@ -37,6 +36,6 @@ int is_palindrome(char *s)
 {
 	char *o = s;
 
-	rec_check(s, o);
+	return (rec_check(s, o));
 
 }
