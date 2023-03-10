@@ -8,15 +8,17 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
+	int t = 0;
 
 	while (argc--)
 	{
-		while (argv[0][i] != '\0')
+		while (argv[t][i] != '\0')
 		{
 			_putchar(argv[0][i]);
 			i++;
 		}
 		_putchar('\n');
 		}
+	t++;
 	return (0);
 }
