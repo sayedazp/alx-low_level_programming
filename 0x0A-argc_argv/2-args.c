@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int t = 0;
 
-	while (argc--)
+	while (t < argc)
 	{
 		while (argv[t][i] != '\0')
 		{
