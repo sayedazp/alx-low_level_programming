@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	_putchar(argc - 1);
+	_putchar(argc - 1 + '0');
 	while (argv[0][i] != '\0')
 	{
 		i++;
