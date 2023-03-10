@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 			i++;
 		}
 		_putchar('\n');
-		}
-	t++;
+		t++;
+	}
 	return (0);
 }
