@@ -9,12 +9,13 @@
 void free_grid(int **x, int height)
 {
 	int i = 0;
+	int z = 0;
 
 	while (i < height)
 	{
 		if (*(x + i) == NULL)
 		{
-			for (int z = 0; i < height; z++)
+			for (z = 0; i < height; z++)
 				free(x[z]);
 			free(x);
 		}
