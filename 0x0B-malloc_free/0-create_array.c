@@ -5,6 +5,7 @@
  * create_array - a function to create a buffer
  * @size: size of a buffer
  * @c: the initialized character
+ * Return: returns a pointer
 */
 char *create_array(unsigned int size, char c)
 {
