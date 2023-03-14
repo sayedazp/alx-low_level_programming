@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.o>
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _strdup - a func
  * @str: a str
