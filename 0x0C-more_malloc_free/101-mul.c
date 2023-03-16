@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define ERR_MSG "Error"
 /**
  * mystrcat - a func to concate
  * @s1: 1
