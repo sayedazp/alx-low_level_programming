@@ -6,7 +6,7 @@
  * @s1: string1
  * @s2: string2
  * @n: number of chars
- * Rerutn: a char pointer
+ * Return: a char pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
