@@ -1,19 +1,21 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * malloc_checked - a func
- * @b: a size to allocate
- *Return: void pointer to the allocated space
-*/
+  * malloc_checked - Allocates memory
+  * @b: the size to allocate
+  *
+  * Return: Nothing.
+  */
 void *malloc_checked(unsigned int b)
 {
-	void *x;
+	void *p;
 
-	x = malloc(b);
-	if (x == NULL)
+	p = malloc(b);
+
+	if (p == NULL)
 		exit(98);
-	return (x);
 
+	return (p);
 }
