@@ -12,16 +12,10 @@ void *malloc_checked(unsigned int b)
 	void *x;
 
 	if (b <= 0)
-	{
 		exit(98);
-		return (NULL);
-	}
 	x = malloc(b);
 	if (x == NULL)
-	{
 		exit(98);
-		return (NULL);
-	}
 	return (x);
 
 }
