@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	sum = s + z + 1;
 	char1 = malloc(sizeof(*char1) * (sum + 15));
 	if (char1 == NULL)
-		return (NULL);
+		return (1);
 	mystrcat(char1, chara);
 	mystrcat(char1, a);
 	mystrcat(char1, char2);
