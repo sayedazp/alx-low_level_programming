@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	}
 	b -= z;
 	sum = s + z + 1;
-	char1 = malloc(sizeof(char) * (sum + 15));
+	char1 = malloc(sizeof(*char1) * (sum + 15));
 	if (char1 == NULL)
 		return (1);
 	mystrcat(char1, chara);
