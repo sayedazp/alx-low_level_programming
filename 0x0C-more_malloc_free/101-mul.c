@@ -69,6 +69,7 @@ int main(int argc, char *argv[])
 	mystrcat(char1, b);
 	mystrcat(char1, char3);
 	system(char1);
+	printf("\n");
 	free(char1);
 	return (0);
 }
