@@ -22,7 +22,7 @@ void mystrcat(char *s1, char *s2)
  */
 void errors(void)
 {
-	printf("Eror\n");
+	printf("Error\n");
 	exit(98);
 }
 /**
