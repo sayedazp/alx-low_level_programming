@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	char *b = argv[2];
 	char *chara = "echo \"";
 	char *char2 = " * ";
-	char *char3 = "\" | bc";
+	char *char3 = "\" | bc | tr -d '\n' | sed 's/\\\\//g'";
 	char *char1;
 	int s = 0, z = 0, sum = 0;
 
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	}
 	b -= z;
 	sum = s + z + 1;
-	char1 = malloc(sizeof(*char1) * (sum + 15));
+	char1 = malloc(sizeof(*char1) * (sum + 500));
 	if (char1 == NULL)
 		return (1);
 	mystrcat(char1, chara);
