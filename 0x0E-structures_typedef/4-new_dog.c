@@ -1,89 +1,106 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
+
 
 /**
- * dup_string - Duplicates a string passed into a newly allocated space in
- * memory
- * @s: Pointer to the first character in the source string
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
  *
- * Return: Pointer to the first character in the newly allocated and copied
- * string
+ * Return: the length of the string
  */
-char *dup_string(char *s)
-{
-	int len, i;
-	char *ret;
+	int _strlen(char *s)
+	{
+		int i;
 
-	for (len = 0; s[len]; len++)
-		;
 
-	ret = malloc(sizeof(char) * (len + 1));
-	if (ret == NULL)
-		return (NULL);
+		i = 0;
 
-	for (i = 0; s[i]; i++)
-		ret[i] = s[i];
-	ret[i] = '\0';
 
-	return (ret);
-}
+		while (s[i] != '\0')
+		{
+			i++;
+		}
+
+
+		return (i);
+	}
+
 
 /**
- * new_dog - Makes a new dog with the given parameters
- * @name: Pointer to the first character of the string of the name of the dog
- * to be created
- * @age: Age of the dog to be created as a float
- * @owner: Pointer to the first character of the string of the owner of the dog
- * to be created
+ * *_strcpy - copies the string pointed to by src
+ * including the terminating null byte (\0)
+ * to the buffer pointed to by dest
+ * @dest: pointer to the buffer in which we copy the string
+ * @src: string to be copied
  *
- * Return: Pointer to the new `dog_t` with all of the given attributes
+ * Return: the pointer to dest
  */
-dog_t *new_dog(char *name, float age, char *owner)
-{
-	char *tname, *towner;
-	dog_t *ret;
-
-	if (name == NULL || owner == NULL)
-		return (NULL);
-
-	ret = malloc(sizeof(dog_t));
-	if (ret == NULL)
-		return (NULL);
-	ret->age = age;
-
-	tname = dup_string(name);
-	if (tname == NULL)
+	char *_strcpy(char *dest, char *src)
 	{
-		free_dog(ret);
-		return (NULL);
-	}
-	ret->name = tname;
+		int len, i;
 
-	towner = dup_string(owner);
-	if (towner == NULL)
-	{
-		free_dog(ret);
-		return (NULL);
-	}
-	ret->owner = towner;
 
-	return (ret);
-}
+		len = 0;
+
+
+		while (src[len] != '\0')
+		{
+			len++;
+		}
+
+
+		for (i = 0; i < len; i++)
+		{
+			dest[i] = src[i];
+		}
+		dest[i] = '\0';
+
+
+		return (dest);
+	}
+
 
 /**
- * free_dog - Frees all memory allocated by a dog_t struct
- * @d: Pointer to the struct to be freed
+ * new_dog - creates a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ *
+ * Return: pointer to the new dog (Success), NULL otherwise
  */
-void free_dog(dog_t *d)
-{
-	if (d == NULL)
-		return;
+	dog_t *new_dog(char *name, float age, char *owner)
+	{
+		dog_t *dog;
+		int len1, len2;
 
-	if (d->name != NULL)
-		free(d->name);
 
-	if (d->owner != NULL)
-		free(d->owner);
+		len1 = _strlen(name);
+		len2 = _strlen(owner);
 
-	free(d);
-}
+
+		dog = malloc(sizeof(dog_t));
+		if (dog == NULL)
+			return (NULL);
+
+
+		dog->name = malloc(sizeof(char) * (len1 + 1));
+		if (dog->name == NULL)
+		{
+			free(dog);
+			return (NULL);
+		}
+		dog->owner = malloc(sizeof(char) * (len2 + 1));
+		if (dog->owner == NULL)
+		{
+			free(dog);
+			free(dog->name);
+			return (NULL);
+		}
+		_strcpy(dog->name, name);
+		_strcpy(dog->owner, owner);
+		dog->age = age;
+
+
+		return (dog);
+	}
+
