@@ -5,18 +5,18 @@
  * @count: a needed param
  * Return: an integer
 */
-int add(const int count, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 	int i, sum;
 
-	if (count == 0)
+	if (n == 0)
 	{
 		return (0);
 	}
-	va_start(ap, count);
+	va_start(ap, n);
 	sum = 0;
-	for (i = 0; i < count; i++)
+	for (i = 0; i < n; i++)
 		sum += va_arg(ap, int);
 	va_end(ap);
 	return (sum);
