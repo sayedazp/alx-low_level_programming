@@ -10,6 +10,10 @@ int add(const int count, ...)
 	va_list ap;
 	int i, sum;
 
+	if (count == 0)
+	{
+		return (0);
+	}
 	va_start(ap, count);
 	sum = 0;
 	for (i = 0; i < count; i++)
