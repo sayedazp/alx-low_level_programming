@@ -1,8 +1,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * add - a func to add
- * @count: a needed param
+ * sum_them_all - a func to add
+ * @n: a needed param
  * Return: an integer
 */
 int sum_them_all(const unsigned int n, ...)
