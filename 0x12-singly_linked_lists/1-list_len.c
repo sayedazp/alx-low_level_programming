@@ -2,6 +2,7 @@
 /**
  * list_len - a func
  * @h: a linked list
+ * Return: the size
 */
 size_t list_len(const list_t *h)
 {
