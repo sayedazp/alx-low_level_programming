@@ -11,10 +11,10 @@
                 "-Wextra",
                 "-std=gnu89",
                 "main.c",
-                "2-add_node.c",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "0-print_list.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
