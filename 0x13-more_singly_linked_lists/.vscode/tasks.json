@@ -11,6 +11,7 @@
                 "-Wextra",
                 "-std=gnu89",
                 "main.c",
+                "0-print_listint.c",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
