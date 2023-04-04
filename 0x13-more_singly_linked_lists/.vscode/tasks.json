@@ -11,6 +11,8 @@
                 "-Wextra",
                 "-std=gnu89",
                 "main.c",
+                "5-free_listint2.c",
+                "4-free_listint.c",
                 "0-print_listint.c",
                 "3-add_nodeint_end.c",
                 "-fdiagnostics-color=always",
