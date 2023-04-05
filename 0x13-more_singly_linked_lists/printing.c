@@ -13,6 +13,5 @@ int main()
     free(x);
     free(z);
     printf("%d", x - y);
-    //printf("sayed");
     return 0;
 }
