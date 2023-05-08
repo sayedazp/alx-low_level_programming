@@ -23,7 +23,7 @@ void get_magic(Elf64_Ehdr *ehdr, char *fname, int fd)
 	    mgc[EI_MAG2] == ELFMAG2 &&
 	    mgc[EI_MAG3] == ELFMAG3)
 	{
-		printf("Magic:  ");
+		printf("  Magic:   ");
 		while (i < EI_NIDENT)
 			printf(" %02x", ehdr->e_ident[i++]);
 		printf("\n");
