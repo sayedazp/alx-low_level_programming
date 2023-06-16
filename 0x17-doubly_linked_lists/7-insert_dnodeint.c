@@ -23,6 +23,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		else if (i == idx && iter->next != NULL)
 		{
 			new = malloc(sizeof(dlistint_t));
+			if (!new)
+				return (NULL);
 			new->n = n;
 			new->next = iter;
 			iter->prev->next = new;
