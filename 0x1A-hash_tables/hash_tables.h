@@ -40,4 +40,5 @@ hash_node_t *set_pair(const char *key, const char *value);
 int set_pair_only(hash_table_t *ht, const char *key,
 		  const char *value, unsigned long int index);
 void free_node(hash_node_t *node);
+hash_node_t *make_hash_node(const char *key, const char *value);
 #endif /*_HASH_TABLES_H_*/
