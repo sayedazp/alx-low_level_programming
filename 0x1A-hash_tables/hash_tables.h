@@ -36,6 +36,7 @@ hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
-hash_node_t *update_node(hash_node_t *node, const char *key, char *value);
-hash_node_t *new_node(hash_node_t *c_node);
+hash_node_t *set_pair(const char *key, const char *value);
+int set_pair_only(hash_table_t *ht, const char *key,
+		  const char *value, unsigned long int index);
 #endif /*_HASH_TABLES_H_*/
