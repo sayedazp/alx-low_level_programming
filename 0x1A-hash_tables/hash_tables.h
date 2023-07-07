@@ -42,4 +42,5 @@ int set_pair_only(hash_table_t *ht, const char *key,
 void free_node(hash_node_t *node);
 hash_node_t *make_hash_node(const char *key, const char *value);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
 #endif /*_HASH_TABLES_H_*/
