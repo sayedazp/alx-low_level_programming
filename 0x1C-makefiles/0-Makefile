@@ -1,1 +1,2 @@
-all: school
+CC=gcc
+all: mian school
