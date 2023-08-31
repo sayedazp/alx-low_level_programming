@@ -3,20 +3,14 @@
 
 
 def island_perimeter(grid):
-    """Returns the perimeter of the island described in grid"""
-    c = 0
-    length = len(grid) - 1
-    width = len(grid[0]) - 1
-
+    """Returns the perimeter of the island as described in a 2*2 grid"""
+    answer = 0
     for i, r in enumerate(grid):
         for j, n in enumerate(r):
             if n == 1:
-                if i == 0 or grid[i - 1][j] != 1:
-                    c += 1
-                if j == 0 or grid[i][j - 1] != 1:
-                    c += 1
-                if j == width or grid[i][j + 1] != 1:
-                    c += 1
-                if i == length or grid[i + 1][j] != 1:
-                    c += 1
-    return c
+                answer += 4
+                if i > 0 and grid[i - 1][j] == 1:
+                    answer -= 2
+                if j > 0 and grid[i][j - 1] == 1:
+                    answer -= 2
+    return answer
