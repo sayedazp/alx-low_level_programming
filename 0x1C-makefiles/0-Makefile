@@ -1,2 +1,2 @@
 CC=gcc
-all: mian school
+all: main school

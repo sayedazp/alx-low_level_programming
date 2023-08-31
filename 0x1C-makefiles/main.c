@@ -1,5 +1,5 @@
 #include <stdio.h>
-int scool(void)
+int main(void)
 {
     printf("hello make");
     return 0;
